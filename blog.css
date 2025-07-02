@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+   z-index: 1;
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+#navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: blueviolet; 
+    text-decoration: underline;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+}
+#hero p{
+    font-size: 1.2rem;
+    color: rgb(102, 94, 94);
+    padding: 0 0px 20px;
+}
+#hero{
+    background-image: url(asset/b19.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-size: top 25% right 0;
+    padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+}
+#hero p{
+    padding-bottom: 20px;
+    color: white;
+}
+#hero h2{
+    color: white;
+}
+#product1{
+    padding: 150px 150px 0 150px;
+    gap: 10vh;
+
+}
+#mainpro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+      position: relative;
+       padding-bottom: 90px;
+  
+}
+.blogbox{
+  width: 50%;
+  margin-right: 40px;
+ 
+}
+.blogbox img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.details{
+    width: 50%;
+
+}
+.details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    font-weight: 700;
+}
+.details a:hover{
+    color: blue;
+}
+#mainpro h1{
+    color: #e1e6ee;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    z-index: -9;
+}
+
+#mail{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(15, 15, 61);
+    margin-top: 15vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.mailw{
+    display: flex;
+    justify-content: center;
+    align-items: center0;
+    flex-direction: column;
+}
+.mailw h3{
+    font-size: 1.7rem;
+}
+.mailinput{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mailinput input{
+    width: 17vw;
+    height: 5vh;
+}
+.mailinput button{
+    height: 5vh;
+    width: 6vw;
+    background-color: rgb(8, 150, 110);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.mailinput button:hover{
+    background-color: aqua;
+}
+
+#footer{
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E3E6F3;
+    margin-top: 1vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+#footer span{
+    font-weight: bolder;
+}
+.install img{
+    height: 10vh;
+    width: 20vw;
+}
+.menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-toggle img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    display: none;
+    background-color: #E3E6F3;
+    padding: 10px;
+  }
+
+  #navbar.active {
+    display: flex;
+  }
+
+  #navbar li {
+    padding: 10px 0;
+  }
+
+  #product1,
+  #product2 {
+    padding: 20px;
+  }
+
+  .pro-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mailinput input {
+    width: 60vw;
+  }
+
+  .mailinput button {
+    width: 30vw;
+  }
+
+  #footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .install img {
+    width: 60vw;
+    height: auto;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
